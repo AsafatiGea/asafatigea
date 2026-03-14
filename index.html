@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asafati Gea | Digital Identity</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#020617',
+                        secondary: '#2563eb',
+                        glow: '#38bdf8',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        glow: '0 0 40px rgba(56,189,248,0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE TRANSLATE STYLE FIX -->
+    <style>
+    /* Style dropdown translate */
+    .goog-te-gadget {
+        color: #e5e7eb !important;
+    }
+
+    .goog-te-gadget select {
+        background: #193096;
+        color: #1fc93e;
+        border: 1px solid #be1d56;
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    /* Sembunyikan logo & teks Google */
+    .goog-logo-link,
+    .goog-te-gadget span {
+        display: none !important;
+    }
+
+    /* SEMBUNYIKAN banner translate BESAR */
+    .goog-te-banner-frame {
+        display: none !important;
+    }
+
+    /* Cegah halaman turun */
+    body {
+        top: 0 !important;
+        position: static !important;
+    }
+</style>
+
+</head>
+
+<body class="font-inter bg-gradient-to-br from-slate-950 via-slate-900 to-black text-gray-200 overflow-x-hidden">
+
+    
+<!-- NAVBAR -->
+<header class="fixed top-0 w-full z-50 backdrop-blur bg-black/40 border-b border-white/10">
+<nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-extrabold tracking-wide text-white">
+        My <span class="text-glow">Curriculum Vitae</span>
+    </h1>
+
+    <!-- Menu Desktop -->
+    <ul class="hidden md:flex gap-8 text-sm uppercase tracking-widest items-center">
+        <li><a href="index.html" class="hover:text-glow">Home</a></li>
+        <li><a href="about.html" class="hover:text-glow">About</a></li>
+        <li><a href="education.html" class="hover:text-glow">Education</a></li>
+        <li><a href="experience.html" class="hover:teks-glow">Experience</a></li>
+        <li><a href="skills.html" class="hover:text-glow">Skills</a></li>
+        <li><a href="projects.html" class="hover:text-glow">Projects</a></li>
+        <li><a href="certificates.html" class="hover:text-glow">Certificates</a></li>
+        <li><a href="contact.html" class="hover:text-glow">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Menu Mobile -->
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+        <span class="w-6 h-0.5 bg-white"></span>
+    </button>
+</nav>
+
+
+<!-- Mobile Menu -->
+<ul id="mobile-menu" class="hidden flex-col gap-4 px-6 pb-4 bg-black/80 border-t border-white/10 md:hidden">
+    <li><a href="index.html" class="block py-2 hover:text-glow">Home</a></li>
+    <li><a href="about.html" class="block py-2 hover:text-glow">About</a></li>
+    <li><a href="education.html" class="block py-2 hover:text-glow">Education</a></li>
+    <li><a href="experience.html" class="block py-2 hover:text-glow font-bold text-glow">Experience</a></li>
+    <li><a href="skills.html" class="block py-2 hover:text-glow">Skills</a></li>
+    <li><a href="projects.html" class="block py-2 hover:text-glow">Projects</a></li>
+    <li><a href="certificates.html" class="block py-2 hover:text-glow">Certificates</a></li>
+    <li><a href="contact.html" class="block py-2 hover:text-glow">Contact</a></li>
+</ul>
+</header>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center relative pt-44 px-6">
+    <div class="relative max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <div class="space-y-8">
+            <h2 class="text-5xl lg:text-7xl font-black text-white">
+                Asafati Gea
+            </h2>
+
+            <p class="text-xl text-glow font-semibold">
+                Information Systems Undergraduate • Data Analyst Focus
+            </p>
+
+            <p class="text-gray-400 max-w-xl">
+                An undergraduate Information Systems student with a strong interest in data analysis,
+                information processing, and data-driven decision making.
+            </p>
+
+            <div class="flex gap-6">
+                <a href="projects.html" class="px-8 py-4 bg-secondary rounded-xl font-bold shadow-glow">
+                    View Projects
+                </a>
+                <a href="contact.html" class="px-8 py-4 border border-glow text-glow rounded-xl">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <img src="img/profil1.jpeg"
+                 class="w-72 h-72 rounded-full object-cover border-4 border-glow shadow-glow"
+                 alt="Asafati Gea">
+        </div>
+    </div>
+</section>
+
+<!-- IDENTITY -->
+<section class="py-24 bg-black/60">
+    <div class="max-w-5xl mx-auto px-6">
+        <h3 class="text-4xl font-extrabold text-center mb-16">Digital Identity</h3>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+            <div class="p-6 bg-white/5 rounded-xl">
+                <h4 class="text-glow font-bold">Full Name</h4>
+                <p>Asafati Gea</p>
+            </div>
+            <div class="p-6 bg-white/5 rounded-xl">
+                <h4 class="text-glow font-bold">Date of Birth</h4>
+                <p>Sihare'o, January 26, 2001</p>
+            </div>
+            <div class="p-6 bg-white/5 rounded-xl">
+                <h4 class="text-glow font-bold">Location</h4>
+                <p>West Bandung, West Java, Indonesia</p>
+            </div>
+            <div class="p-6 bg-white/5 rounded-xl">
+                <h4 class="text-glow font-bold">Email</h4>
+                <p>2382006@unai.edu</p>
+            </div>
+            <div class="p-6 bg-white/5 rounded-xl">
+                <h4 class="text-glow font-bold">Phone</h4>
+                <p>0821-6571-3526</p>
+            </div>
+            <div class="p-6 bg-white/5 rounded-xl">
+                <h4 class="text-glow font-bold">Academic Status</h4>
+                <p>Undergraduate Student — Data Analysis Focus</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-8 text-center text-gray-500 text-sm border-t border-white/10">
+    © 2025 Asafati Gea — Data-Driven Digital Identity
+</footer>
+
+<!-- SCRIPT -->
+<script>
+    document.getElementById('mobile-menu-btn').onclick = () =>
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+</script>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,id,zh-CN,iw',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+<!-- GOOGLE TRANSLATE BAR (DI BAWAH HEADER) -->
+    <div class="w-full border-t border-white/10 bg-black/60">
+        <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end">
+            <div id="google_translate_element" class="text-sm"></div>
+        </div>
+    </div>
+</html>

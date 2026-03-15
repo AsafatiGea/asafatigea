@@ -1,0 +1,74 @@
+.certificates {
+  min-height: 100vh;
+  padding: 160px 20px 120px;
+}
+
+.certificates-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.certificates-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.certificates-header h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.certificates-header span {
+  color: #38bdf8;
+}
+
+.certificates-header p {
+  color: #9ca3af;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* GRID */
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.certificate-card h4 {
+  margin-bottom: 10px;
+}
+
+.certificate-card p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.back-home {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}

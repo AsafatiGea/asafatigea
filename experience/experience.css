@@ -1,0 +1,42 @@
+.experience {
+  min-height: 100vh;
+  padding: 160px 20px 120px;
+}
+
+.experience-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.experience-container h2 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.experience-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-list li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.experience-list h3 {
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.experience-list p {
+  color: #9ca3af;
+}
+
+.back-home {
+  margin-top: 50px;
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+/* GLOBAL */
+
+body {
+  font-family: "Inter", sans-serif;
+  background: black;
+  color: white;
+  margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo span {
+  color: white;
+}
+
+/* DESKTOP MENU */
+
+.menu-desktop {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu-desktop a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-desktop a:hover {
+  color: #38bdf8;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 20px;
+  background: white;
+  gap: 15px;
+}
+
+.menu-desktop a.active {
+  color: #0077ff; /* warna teks */
+  font-weight: 700; /* teks lebih tebal */
+  border-bottom: 2px solid #0077ff; /* garis bawah */
+  padding-bottom: 4px;
+}
+
+/* untuk mobile menu */
+
+.mobile-menu a.active {
+  color: #0077ff;
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}

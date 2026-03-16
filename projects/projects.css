@@ -28,7 +28,10 @@
   margin: auto;
 }
 
-/* GRID */
+.featured-project {
+  max-width: 700px;
+  margin: 0 auto 80px auto;
+}
 
 .projects-grid {
   display: grid;
@@ -36,7 +39,9 @@
   gap: 30px;
 }
 
-/* CARD */
+.more-projects {
+  display: none;
+}
 
 .project-card {
   background: rgba(255, 255, 255, 0.05);
@@ -62,8 +67,6 @@
   margin-bottom: 15px;
 }
 
-/* TECH */
-
 .tech {
   display: flex;
   flex-wrap: wrap;
@@ -77,8 +80,6 @@
   border-radius: 6px;
   font-size: 13px;
 }
-
-/* BUTTON */
 
 .project-buttons {
   display: flex;
@@ -94,12 +95,25 @@
   font-size: 14px;
 }
 
+.see-more-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#seeMoreBtn {
+  background: #38bdf8;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
 .back-home {
   text-align: center;
   margin-top: 60px;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .projects-grid {

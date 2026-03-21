@@ -12,3 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function toggleGames() {
+  const games = document.getElementById("gamesList");
+
+  if (games.style.display === "none" || games.style.display === "") {
+    games.style.display = "block";
+  } else {
+    games.style.display = "none";
+  }
+}

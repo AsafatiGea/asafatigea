@@ -28,12 +28,8 @@
   margin: auto;
 }
 
-.featured-project {
-  max-width: 700px;
-  margin: 0 auto 80px auto;
-}
 
-.projects-grid {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -87,7 +83,7 @@
 }
 
 .project-buttons a {
-  background: #2563eb;
+  background: blue;
   padding: 8px 14px;
   border-radius: 8px;
   color: white;
@@ -101,7 +97,7 @@
 }
 
 #seeMoreBtn {
-  background: #38bdf8;
+  background: blue;
   border: none;
   padding: 12px 25px;
   border-radius: 8px;
